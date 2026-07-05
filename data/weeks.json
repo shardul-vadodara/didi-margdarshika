@@ -1,1 +1,34 @@
-[]
+[
+  {
+    "week": 4,
+    "start_date": "2026-07-06",
+    "end_date": "2026-07-12",
+    "title_gu": "રથયાત્રા ઉત્સવની પૂર્વતૈયારી",
+    "groups": {
+      "mrigendra_pundarik": {
+        "files": [
+          {
+            "label_gu": "શિક્ષક શીટ PDF",
+            "path": "files/week4_mrigendra_pundarik.pdf"
+          },
+          {
+            "label_gu": "શિક્ષક શીટ ચિત્ર (PNG)",
+            "path": "files/week4_mrigendra_pundarik.png"
+          }
+        ]
+      },
+      "savaj_kesari": {
+        "files": [
+          {
+            "label_gu": "શિક્ષક શીટ PDF",
+            "path": "files/week4_savaj_kesari.pdf"
+          },
+          {
+            "label_gu": "શિક્ષક શીટ ચિત્ર (PNG)",
+            "path": "files/week4_savaj_kesari.png"
+          }
+        ]
+      }
+    }
+  }
+]
