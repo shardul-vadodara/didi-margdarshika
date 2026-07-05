@@ -2,7 +2,7 @@
 
 Teacher's weekly planning guide for Shardul Shishu Vihar, Vadodara. Static site hosted on GitHub Pages.
 
-**Live:** https://shardul-vadodara.github.io/acharya-space/
+**Live:** https://shardul-vadodara.github.io/didi-margdarshika/
 
 ## What it shows
 
