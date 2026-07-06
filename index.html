@@ -3,22 +3,23 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>શાર્દૂલ શિશુ વિહાર — શિક્ષક આચાર્ય માર્ગદર્શિકા</title>
+<title>શાર્દૂલ શિશુ વિહાર — શિક્ષક માર્ગદર્શિકા</title>
+<link rel="icon" type="image/png" href="logo.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap">
 <style>
   :root {
-    --saffron: #e07b39;
-    --saffron-dark: #c05f1f;
-    --green: #3a7d44;
-    --green-dark: #2c6134;
-    --cream: #fdf8f0;
+    /* palette drawn from the school logo: saffron sun, golden flames, dark brown */
+    --saffron: #F28C0F;
+    --saffron-dark: #C46F06;
+    --brown: #38220E;
+    --cream: #FFF9EF;
     --card: #ffffff;
     --ink: #33302b;
     --muted: #7a736a;
-    --border: #eadfce;
-    --pin: #fff3e0;
+    --border: #F3E3C4;
+    --pin: #FFF3DC;
   }
   * { box-sizing: border-box; margin: 0; padding: 0; }
   body {
@@ -28,10 +29,19 @@
     line-height: 1.6;
   }
   header {
-    background: linear-gradient(135deg, var(--green) 0%, var(--green-dark) 100%);
+    background: linear-gradient(135deg, var(--saffron) 0%, var(--saffron-dark) 100%);
     color: #fff;
-    padding: 20px 16px 14px;
+    padding: 16px 16px 12px;
     text-align: center;
+  }
+  header .logo {
+    height: 64px;
+    width: 64px;
+    border-radius: 50%;
+    background: #fff;
+    object-fit: contain;
+    margin-bottom: 6px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.2);
   }
   header h1 { font-size: 1.4rem; font-weight: 700; }
   header .sub { font-size: 0.85rem; opacity: 0.92; margin-top: 2px; }
@@ -44,9 +54,9 @@
     flex-wrap: wrap;
   }
   .group-btn {
-    border: 1.5px solid var(--green);
+    border: 1.5px solid var(--saffron);
     background: var(--card);
-    color: var(--green-dark);
+    color: var(--saffron-dark);
     border-radius: 20px;
     padding: 6px 18px;
     font-family: inherit;
@@ -54,7 +64,7 @@
     font-weight: 600;
     cursor: pointer;
   }
-  .group-btn.active { background: var(--green); color: #fff; }
+  .group-btn.active { background: var(--saffron); color: #fff; }
   .group-btn .age { font-size: 0.72rem; font-weight: 400; display: block; }
 
   .week-nav {
@@ -70,9 +80,9 @@
     border-bottom: 1px solid var(--border);
   }
   .week-nav button {
-    border: 1.5px solid var(--green);
+    border: 1.5px solid var(--saffron);
     background: var(--card);
-    color: var(--green-dark);
+    color: var(--saffron-dark);
     border-radius: 8px;
     width: 40px;
     height: 38px;
@@ -85,8 +95,8 @@
     font-family: inherit;
     font-size: 0.95rem;
     font-weight: 600;
-    color: var(--green-dark);
-    border: 1.5px solid var(--green);
+    color: var(--saffron-dark);
+    border: 1.5px solid var(--saffron);
     border-radius: 8px;
     padding: 7px 10px;
     background: var(--card);
@@ -104,7 +114,7 @@
     box-shadow: 0 1px 3px rgba(0,0,0,0.04);
   }
   .card.pinned { background: var(--pin); border-color: var(--saffron); }
-  .card h3 { font-size: 1.05rem; color: var(--green-dark); margin-bottom: 6px; }
+  .card h3 { font-size: 1.05rem; color: var(--saffron-dark); margin-bottom: 6px; }
   .card p { font-size: 0.92rem; }
   .card ul { padding-left: 20px; font-size: 0.9rem; }
   .card ul li { margin-bottom: 4px; }
@@ -120,7 +130,7 @@
   .kriya .meta { font-size: 0.82rem; color: var(--muted); font-style: italic; margin-top: 4px; }
 
   .week-banner {
-    background: var(--green);
+    background: var(--saffron);
     color: #fff;
     border-radius: 12px;
     padding: 14px 16px;
@@ -140,7 +150,7 @@
 
   .file-link {
     display: inline-block;
-    background: var(--green);
+    background: var(--saffron);
     color: #fff;
     text-decoration: none;
     border-radius: 8px;
@@ -149,7 +159,7 @@
     font-weight: 600;
     margin: 6px 6px 0 0;
   }
-  .file-link:hover { background: var(--green-dark); }
+  .file-link:hover { background: var(--saffron-dark); }
 
   .empty {
     text-align: center;
@@ -169,8 +179,9 @@
 <body>
 
 <header>
+  <img class="logo" src="logo.png" alt="શાર્દૂલ શિશુ વિહાર લોગો">
   <h1 id="schoolName">શાર્દૂલ શિશુ વિહાર</h1>
-  <div class="sub" id="schoolSub">વડોદરા — આચાર્ય માર્ગદર્શિકા</div>
+  <div class="sub" id="schoolSub">વડોદરા — શિક્ષક માર્ગદર્શિકા</div>
 </header>
 
 <div class="group-switch" id="groupSwitch"></div>
@@ -263,7 +274,7 @@ function fileLinks(files) {
 function renderWeek() {
   const el = document.getElementById('content');
   if (!WEEKS.length) {
-    el.innerHTML = `<div class="empty">આચાર્ય માર્ગદર્શિકા હજી પ્રકાશિત થયું નથી.</div>`;
+    el.innerHTML = `<div class="empty">માર્ગદર્શિકા હજી પ્રકાશિત થઈ નથી.</div>`;
     return;
   }
   const wk = WEEKS[activeWeekIdx];
@@ -282,7 +293,7 @@ function renderWeek() {
     html += `<div class="card"><h3>મુખ્ય પ્રવૃત્તિઓ</h3><ul>${g.activities_gu.map(a => `<li>${esc(a)}</li>`).join("")}</ul></div>`;
   }
   if (g.kriyakalapo && g.kriyakalapo.length) {
-    html += `<div class="card"><h3>ક્રિયાકલાપ (આચાર્ય માર્ગદર્શિકા)</h3>` + g.kriyakalapo.map(k => `
+    html += `<div class="card"><h3>ક્રિયાકલાપ (માર્ગદર્શિકા)</h3>` + g.kriyakalapo.map(k => `
       <div class="kriya">
         <h4>${esc(k.title)}</h4>
         ${k.steps && k.steps.length ? `<ul>${k.steps.map(s => `<li>${esc(s)}</li>`).join("")}</ul>` : ""}
@@ -331,7 +342,7 @@ document.getElementById('weekSelect').addEventListener('change', e => {
   ]);
   WEEKS.sort((a, b) => a.week - b.week);
   if (CONFIG.school.name_gu) document.getElementById('schoolName').textContent = CONFIG.school.name_gu;
-  const sub = [CONFIG.school.city_gu, 'આચાર્ય માર્ગદર્શિકા'].filter(Boolean).join(" — ");
+  const sub = [CONFIG.school.city_gu, 'શિક્ષક માર્ગદર્શિકા'].filter(Boolean).join(" — ");
   if (sub) document.getElementById('schoolSub').textContent = sub;
   if (!CONFIG.groups.some(g => g.id === activeGroup) && CONFIG.groups.length) {
     activeGroup = CONFIG.groups[0].id;
